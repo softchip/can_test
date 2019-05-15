@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"rpm_maf\startup_stm32f103xb.o"
+"rpm_maf\main.o"
+"rpm_maf\stm32f1xx_it.o"
+"rpm_maf\stm32f1xx_hal_msp.o"
+"rpm_maf\oled.o"
+"rpm_maf\stm32f1xx_hal_gpio_ex.o"
+"rpm_maf\stm32f1xx_hal_adc.o"
+"rpm_maf\stm32f1xx_hal_adc_ex.o"
+"rpm_maf\stm32f1xx_hal_tim.o"
+"rpm_maf\stm32f1xx_hal_tim_ex.o"
+"rpm_maf\stm32f1xx_hal_uart.o"
+"rpm_maf\stm32f1xx_hal.o"
+"rpm_maf\stm32f1xx_hal_rcc.o"
+"rpm_maf\stm32f1xx_hal_rcc_ex.o"
+"rpm_maf\stm32f1xx_hal_gpio.o"
+"rpm_maf\stm32f1xx_hal_dma.o"
+"rpm_maf\stm32f1xx_hal_cortex.o"
+"rpm_maf\stm32f1xx_hal_pwr.o"
+"rpm_maf\stm32f1xx_hal_flash.o"
+"rpm_maf\stm32f1xx_hal_flash_ex.o"
+"rpm_maf\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RPM_MAF\RPM_MAF.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./RPM_MAF/\RPM_MAF.map" -o RPM_MAF\RPM_MAF.axf

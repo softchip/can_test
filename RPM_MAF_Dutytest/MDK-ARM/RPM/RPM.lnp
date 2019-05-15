@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"rpm\startup_stm32f103xb.o"
+"rpm\oled.o"
+"rpm\main.o"
+"rpm\stm32f1xx_it.o"
+"rpm\stm32f1xx_hal_msp.o"
+"rpm\stm32f1xx_hal_gpio_ex.o"
+"rpm\stm32f1xx_hal_adc.o"
+"rpm\stm32f1xx_hal_adc_ex.o"
+"rpm\stm32f1xx_hal_tim.o"
+"rpm\stm32f1xx_hal_tim_ex.o"
+"rpm\stm32f1xx_hal_uart.o"
+"rpm\stm32f1xx_hal.o"
+"rpm\stm32f1xx_hal_rcc.o"
+"rpm\stm32f1xx_hal_rcc_ex.o"
+"rpm\stm32f1xx_hal_gpio.o"
+"rpm\stm32f1xx_hal_dma.o"
+"rpm\stm32f1xx_hal_cortex.o"
+"rpm\stm32f1xx_hal_pwr.o"
+"rpm\stm32f1xx_hal_flash.o"
+"rpm\stm32f1xx_hal_flash_ex.o"
+"rpm\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RPM\RPM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RPM.map" -o RPM\RPM.axf
